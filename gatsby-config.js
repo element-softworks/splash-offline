@@ -2,34 +2,16 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Template',
-        titleTemplate: '%s · Gatsby Template',
-        description: 'A Gatsby Template.',
-        url: 'https://gatsbytemplate.com',
+        title: 'Offline',
+        titleTemplate: '%s · Offline',
+        description: 'This website is currently offline.',
+        url: 'https://elementsoftworks.co.uk',
         image: '/images/preview.png',
         author: 'Element Softworks',
         twitterUsername: '',
         authorLink: 'https://github.com/element-softworks',
     },
     plugins: [
-        `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`,
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: [
-                    // 'gatsby-remark-copy-linked-files',
-                    // 'gatsby-remark-relative-images',
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 1280,
-                        },
-                    },
-                ],
-            },
-        },
-        'gatsby-transformer-json',
         'gatsby-plugin-react-helmet',
         {
             resolve: 'gatsby-source-filesystem',
