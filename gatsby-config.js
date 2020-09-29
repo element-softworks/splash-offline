@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: 'Offline',
-        titleTemplate: '%s · Offline',
-        description: 'This website is currently offline.',
+        title: 'The Gundies 2021',
+        titleTemplate: '%s · The Gundies 2021',
+        description: 'The 2nd Annual firearms award ceremony.',
         url: 'https://elementsoftworks.co.uk',
         image: '/images/preview.png',
         author: 'Element Softworks',

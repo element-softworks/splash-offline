@@ -1012,10 +1012,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@element-softworks/daintree@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@element-softworks/daintree/-/daintree-0.0.11.tgz#454b5137f9258f5e7d72e655d62624c65bc37bfa"
-  integrity sha512-y5+tMdC55QjPbdijdflAJzIBHBP2f5GNaH2E+OQVoXgfxs2hiHrG/PGjMz+MkdYtENP3LF7s95mZStQCoj+SRw==
+"@element-softworks/daintree@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@element-softworks/daintree/-/daintree-0.0.13.tgz#ee9a16b1ba914704967f5427799fa00a2fdf1010"
+  integrity sha512-lL4pdT4adtpF7P6CYNgUknXuyjcHXKaER+5Qvu8byLqaK0wH86EdcUwyhUbtWcWlvFXfZ03MCfRD4Nr4oB1B1g==
   dependencies:
     react "^16.10.2"
     react-dom "^16.10.2"
