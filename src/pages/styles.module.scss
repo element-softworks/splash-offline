@@ -1,5 +1,6 @@
 @import '@module';
-@import url('https://use.typekit.net/brz8anz.css');
+@import url("https://use.typekit.net/eif5bic.css");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .offline {
   height: 100vh;
@@ -9,31 +10,50 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #1C1C1C;
 
   .offline-content {
     width: 100%;
-    display: inline-flex;
-    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
     max-width: 1200px;
     padding: 0 $bsu;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      // offset svg logo
+      margin-bottom: -235px;
+
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .offline-logo {
       position: relative;
-      max-width: 100px;
+      max-width: 200px;
       height: auto;
-      margin-bottom: $hsu;
+      margin-bottom: $bsu;
 
       svg {
         margin-top: -100%;
         width: 100%;
+        fill: $colour-white;
       }
     }
 
     h1 {
       margin-bottom: $hsu;
+      color: $colour-white;
+      text-align: center;
+    }
+
+    p {
+      color: $colour-white;
+      margin-bottom: 0;
     }
   }
 
@@ -42,8 +62,13 @@
     padding: $bsu;
     max-width: 1200px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
+    color: $colour-white;
+
+    a {
+      color: #FF8900;
+    }
   }
 
   @include lg-down {

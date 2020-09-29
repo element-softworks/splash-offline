@@ -8,13 +8,15 @@ const Home = () => {
         <Fragment>
             <div className={styles.offline}>
                 <div className={styles.offlineContent}>
-                    <div className={styles.offlineLogo}>
-                        <Logo />
+                    <div>
+                        <div className={styles.offlineLogo}>
+                            <Logo />
+                        </div>
+                        <h1>The 2nd Annual Gundies Awards</h1>
+                        <p>Coming 1st November</p>
                     </div>
-                    <h1>Sorry, this website is offline right now.</h1>
-                    <p>Contact the system administrator at <a href="mailto:support@merlinpanel.com">support@merlinpanel.com</a> for more information.</p>
                 </div>
-                <footer><p>This website was created by <a href="https://elementsoftworks.co.uk">Element Softworks Ltd.</a></p></footer>
+                <footer><p>By <a href="https://forgerelations.com">Forge Relations</a> and <a href="https://elementsoftworks.co.uk">Element Softworks Ltd.</a></p></footer>
             </div>
         </Fragment>
     )
