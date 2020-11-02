@@ -15,7 +15,7 @@ const Home = () => {
                             <Logo />
                         </div>
                         <h1>The 2nd Annual Gundies Awards</h1>
-                        <p>Coming 1st November</p>
+                        <p>Coming 3rd November</p>
                     </div>
                 </div>
                 <footer><p>By <a href="https://forgerelations.com">Forge Relations</a> and <a href="https://elementsoftworks.co.uk">Element Softworks Ltd.</a></p></footer>
