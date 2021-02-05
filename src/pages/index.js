@@ -5,12 +5,14 @@ import Logo from '@images/logo.svg';
 import SEO from '@components/SEO';
 import Layout from '@components/Layout';
 import Hero from '@components/Hero';
+import Winners from '@components/Winners';
 
 const Home = () => {
     return (
         <Layout>
             <SEO />
             <Hero />
+            <Winners />
             {/*<div className={styles.offline}>*/}
             {/*    <div className={styles.offlineContent}>*/}
             {/*        <div>*/}
