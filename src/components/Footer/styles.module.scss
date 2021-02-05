@@ -4,6 +4,7 @@
     margin-top: $dsu * 2;
     padding: $dsu;
     width: 100vw;
+    background: $colour-background-secondary;
 }
 
 .font-awesome-icon {
@@ -74,6 +75,28 @@
                     &:hover {
                         color: $colour-gray;
                     }
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .footer-wrapper {
+        margin-top: $dsu;
+        padding: $dsu;
+        width: 100vw;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > div {
+            &:last-child {
+                margin-top: $bsu;
+                text-align: left;
+                .social-media {
+                    justify-content: flex-start;
                 }
             }
         }

@@ -70,3 +70,25 @@
         }
     }
 }
+
+@include sm-down {
+    .hero-heading {
+        .heading-top {
+            padding: 0 $bsu;
+        }
+        .heading-bottom {
+            padding: 0 $bsu;
+        }
+    }
+}
+
+@include xs {
+    .hero-heading {
+        svg {
+            width: 150px;
+        }
+        .heading-top {
+            margin-top: $dsu * 1;
+        }
+    }
+}
