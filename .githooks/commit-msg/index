@@ -5,7 +5,7 @@
 # Make sure to add execution permissions to the file.
 
 export MESSAGE=$(<$1)
-export JIRA_ISSUE_TAG='MP-([0-9]*)'
+export JIRA_ISSUE_TAG='GD-([0-9]*)'
 
 if [[ $MESSAGE =~ $JIRA_ISSUE_TAG ]]; then
   echo "Great, your commit message contains a JIRA issue!"
