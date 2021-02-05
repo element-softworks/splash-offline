@@ -14,7 +14,7 @@ const Home = () => {
                         <div className={styles.offlineLogo}>
                             <Logo />
                         </div>
-                        <h1>The 3nd Annual Gundies Awards</h1>
+                        <h1>The 3rd Annual Gundies Awards</h1>
                         <p>Coming 1st November 2021</p>
                     </div>
                 </div>
