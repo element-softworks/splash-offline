@@ -12,6 +12,8 @@ module.exports = {
         authorLink: 'https://github.com/element-softworks',
     },
     plugins: [
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         'gatsby-plugin-react-helmet',
         {
             resolve: 'gatsby-source-filesystem',
@@ -31,6 +33,35 @@ module.exports = {
                 theme_color: '#111111',
                 display: 'standalone',
                 icon: './static/images/favicon/android-chrome-512x512.png',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/media`,
+                name: 'media',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/data`,
+                name: 'data',
+            },
+        },
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    // 'gatsby-remark-copy-linked-files',
+                    // 'gatsby-remark-relative-images',
+                    {
+                        resolve: 'gatsby-remark-images',
+                        options: {
+                            maxWidth: 1280,
+                        },
+                    },
+                ],
             },
         },
         {
