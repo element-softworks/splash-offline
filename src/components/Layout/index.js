@@ -12,9 +12,7 @@ const Layout = ({ homepage = false, children }) => {
     return (
         <div className={styles.layout}>
             <main>{children}</main>
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </div>
     );
 };

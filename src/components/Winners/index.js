@@ -34,6 +34,7 @@ const Winners = () => {
     return (
         <section className={styles.winnersWrapper}>
             <Container>
+                <h3>The Gundies 2021 Winners</h3>
                 <div className={styles.winnersContainer}>
                     {data?.winner?.map(winner => (
                         <WinnerCard

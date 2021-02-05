@@ -1,6 +1,8 @@
 @import '@module';
 
 .footer-wrapper {
+    margin-top: $dsu * 2;
+    padding: $dsu;
     width: 100vw;
 }
 
