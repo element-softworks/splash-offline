@@ -1,1 +1,30 @@
 @import '@module';
+
+.winner-card-wrapper {
+    background: $colour-background-secondary;
+    padding: $bsu;
+    display: flex;
+}
+
+.winner-card-image {
+    :global {
+        .gatsby-image-wrapper {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+.winner-card-content {
+    padding: $bsu;
+    h3,
+    p {
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 300;
+    }
+    span {
+        text-decoration: underline;
+        font-weight: 400;
+    }
+}

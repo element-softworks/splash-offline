@@ -30,7 +30,6 @@ const Hero = () => {
     `);
     const data = heroData?.allMarkdownRemark?.edges?.[0]?.node?.frontmatter;
 
-    console.log(data);
     return (
         <section className={styles.heroWrapper}>
             <div
