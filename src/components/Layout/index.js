@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 const Layout = ({ homepage = false, children }) => {
     return (
-        <div>
+        <div className={styles.layout}>
             <main>{children}</main>
         </div>
     );
