@@ -57,6 +57,21 @@
             display: flex;
         }
     }
+    .countdown-container {
+        display: flex;
+        padding-right: $bsu;
+        margin-top: $bsu;
+
+        > p {
+            font-size: 20px;
+            color: $colour-white;
+            font-style: italic;
+            margin: 0;
+            &:last-child {
+                margin-left: $hsu;
+            }
+        }
+    }
 }
 
 @include sm-down {
@@ -77,6 +92,19 @@
         }
         .heading-top {
             margin-top: $dsu * 1;
+            padding: $hsu;
+        }
+        .heading-bottom {
+            padding: $hsu;
+        }
+        .countdown-container {
+            flex-direction: column;
+            padding: $hsu;
+            > p {
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

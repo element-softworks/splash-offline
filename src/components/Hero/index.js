@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@components/Container';
 import SubscribeCTA from '@components/SubscribeCTA';
+import useCountdown from '@helpers/useCountdown';
 
 const Hero = () => {
     const heroData = useStaticQuery(graphql`
@@ -30,6 +31,10 @@ const Hero = () => {
         }
     `);
     const data = heroData?.allMarkdownRemark?.edges?.[0]?.node?.frontmatter;
+
+    const [timestamp, countdown, ended] = useCountdown(new Date('2021-11-01T00:00:00.000-00:00'), {
+        units: { months: true, days: true, hours: true, minutes: true, seconds: true },
+    });
 
     return (
         <section className={styles.heroWrapper}>
@@ -60,13 +65,19 @@ const Hero = () => {
                                 For any enquires please contact team@thegundies.com
                             </p>
                         </div>
-                        {/*<div className={styles.headingBottom}>*/}
-                        {/*    <p>*/}
-                        {/*        Subscribe to our mailing list to be the first to know about the*/}
-                        {/*        Gundies 2022.*/}
-                        {/*    </p>*/}
-                        {/*    <SubscribeCTA />*/}
-                        {/*</div>*/}
+                        <div className={styles.headingBottom}>
+                            <p>
+                                Subscribe to our mailing list to be the first to know about the
+                                Gundies 2022.
+                            </p>
+                            <SubscribeCTA />
+                            {!ended && (
+                                <div className={styles.countdownContainer}>
+                                    <p>Countdown until Gundies v3: </p>
+                                    <p>{`${countdown?.months?.formatted}m ${countdown?.days?.formatted}d ${countdown?.hours?.formatted}h ${countdown?.minutes?.formatted}m ${countdown?.seconds?.formatted}s`}</p>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </Container>
             </div>
