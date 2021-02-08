@@ -13,10 +13,10 @@ const Contact = () => {
                         For contacts write an email to:
                         <br />
                         <a
-                            href="mailto:main@thegundies.com?subject=Gundies%20Enquiry"
-                            className="text-secondary mt-2"
+                            href="mailto:team@thegundies.com?subject=Gundies%20Enquiry"
+                            rel="noopener noreferrer"
                         >
-                            main@thegundies.com
+                            team@thegundies.com
                         </a>
                     </p>
                 </div>

@@ -30,19 +30,17 @@ const Header = () => {
     return (
         <header className={styles.headerWrapper}>
             <div className={styles.headerContainer}>
-                <div className={styles.headerLeft}>
-                    <div className={styles.headerLogoContainer}>
-                        <Link to="/">
-                            <SVG alt="Logo" src={data?.logo?.publicURL} />
-                        </Link>
-                    </div>
-                    {!ended && (
-                        <div className={styles.countdownContainer}>
-                            <p>Countdown until 1st November 2021:</p>
-                            <p>{`${countdown?.months?.formatted}mm ${countdown?.days?.formatted}dd ${countdown?.hours?.formatted}hh ${countdown?.minutes?.formatted}mm ${countdown?.seconds?.formatted}ss`}</p>
-                        </div>
-                    )}
+                <div className={styles.headerLogoContainer}>
+                    <Link to="/">
+                        <SVG alt="Logo" src={data?.logo?.publicURL} />
+                    </Link>
                 </div>
+                {!ended && (
+                    <div className={styles.countdownContainer}>
+                        <p>Countdown until Gundies v3:</p>
+                        <p>{`${countdown?.months?.formatted}m ${countdown?.days?.formatted}d ${countdown?.hours?.formatted}h ${countdown?.minutes?.formatted}m ${countdown?.seconds?.formatted}s`}</p>
+                    </div>
+                )}
             </div>
         </header>
     );

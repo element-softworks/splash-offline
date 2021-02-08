@@ -87,7 +87,6 @@ const Footer = () => {
                             </a>
                             <a
                                 href="mailto:team@thegundies.com?subject=Gundies%20Enquiry"
-                                className="text-secondary no-underline block mt-2"
                                 rel="noopener noreferrer"
                             >
                                 team@thegundies.com
