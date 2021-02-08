@@ -30,7 +30,6 @@ const Winners = () => {
         }
     `);
     const data = winnersData?.allMarkdownRemark?.edges?.[0]?.node?.frontmatter;
-    console.log(data);
     return (
         <section className={styles.winnersWrapper}>
             <Container>
