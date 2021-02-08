@@ -9,10 +9,10 @@ import { faLinkedin, faFacebook, faInstagram, faYoutube } from '@fortawesome/fre
 import Header from '@components/Header';
 
 library.add(faLinkedin, faFacebook, faInstagram, faYoutube);
-const Layout = ({ homepage = false, children }) => {
+const Layout = ({ header = true, children }) => {
     return (
         <div className={styles.layout}>
-            <Header />
+            {header && <Header />}
             <main>{children}</main>
             <Footer />
         </div>

@@ -10,7 +10,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const Home = () => {
     return (
-        <Layout>
+        <Layout header={false}>
             <SEO />
             <Hero />
             <Winners />
