@@ -13,7 +13,10 @@
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
+   padding-top: $dsu * 2;
+
 }
+
 
 .hero-heading {
     display: flex;
@@ -23,6 +26,7 @@
     text-align: center;
     padding-bottom: $dsu;
     background-position: bottom;
+    padding-top: $dsu;
     svg {
         width: 220px;
         fill: $colour-white;
@@ -39,7 +43,6 @@
         font-weight: 300;
     }
     .heading-top {
-        margin-top: $dsu * 3;
 
         background-position: 0 0;
         background-size: cover;
