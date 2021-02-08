@@ -14,18 +14,6 @@ const Home = () => {
             <SEO />
             <Hero />
             <Winners />
-            {/*<div className={styles.offline}>*/}
-            {/*    <div className={styles.offlineContent}>*/}
-            {/*        <div>*/}
-            {/*            <div className={styles.offlineLogo}>*/}
-            {/*                <Logo />*/}
-            {/*            </div>*/}
-            {/*            <h1>The 2nd Annual Gundies Awards</h1>*/}
-            {/*            <p>Coming 3rd November</p>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <footer><p>By <a href="https://forgerelations.com">Forge Relations</a> and <a href="https://elementsoftworks.co.uk">Element Softworks Ltd.</a></p></footer>*/}
-            {/*</div>*/}
         </Layout>
     );
 };

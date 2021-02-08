@@ -1,0 +1,534 @@
+@import '@module';
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border: none;
+	transition: background $transition 0.2s, box-shadow $transition 0.2s;
+	font-size: $font-size-base;
+	font-family: $font-family-body;
+	font-weight: 400;
+	padding: 0 $bsu * 0.45;
+	// fixed button height
+	height: 45px;
+	cursor: pointer;
+	position: relative;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 0;
+	min-height: 45px;
+	vertical-align: top;
+	text-align: center;
+	//min-width: 230px;
+	min-width: 100px;
+	max-width: 100%;
+	text-align: center;
+
+	&.button-block {
+		display: flex;
+		width: 100%;
+	}
+
+	&.button-big {
+		padding: 0 ($bsu * 1.6);
+		height: 55px;
+	}
+
+	+ .button {
+		margin-left: $hsu;
+	}
+
+	&.button-small {
+		padding: 0 $bsu;
+		height: 35px;
+		min-height: 35px;
+		font-size: $font-size-base / 1.15;
+		line-height: 0;
+
+		+ .button {
+			margin-left: $qsu;
+		}
+
+		svg {
+			font-size: $font-size-base / 1.25;
+		}
+	}
+
+	&.button-no-border {
+		border: none !important;
+	}
+
+	&.button-light {
+		font-weight: 500;
+	}
+
+	&.button-float {
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	svg {
+		margin-left: $qsu;
+	}
+
+	&.button-icon-before {
+		svg {
+			margin-left: 0;
+			margin-right: $qsu;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: 0;
+		box-shadow: $focus-box-shadow !important;
+	}
+
+	&,
+	&.button-primary {
+		background: $colour-primary;
+		color: $colour-text-inversed;
+		box-shadow: 2px 4px 20px #b73f2333;
+
+		&:hover {
+			background: $colour-primary-shade;
+			box-shadow: 2px 4px 20px #b73f2380;
+		}
+
+		&.button-disabled {
+			background: $colour-primary-disabled;
+		}
+	}
+
+	&.button-secondary {
+		background: transparent;
+		color: $colour-primary;
+		border: 1px solid $colour-primary;
+		box-shadow: 2px 4px 20px #b73f2333;
+
+		&:hover {
+			background: transparentize($colour-secondary, 0.2);
+			box-shadow: 2px 4px 20px #b73f2380;
+		}
+
+		&.button-disabled {
+			border: 1px solid $colour-primary-disabled;
+			color: $colour-primary-disabled;
+		}
+	}
+
+	&.button-info {
+		background: $colour-info;
+		color: $colour-text-inversed;
+
+		&:hover {
+			background: $colour-info-shade;
+		}
+	}
+
+	&.button-success {
+		background: $colour-success;
+		color: $colour-success-dark;
+
+		&:hover {
+			background: $colour-success-highlight;
+		}
+	}
+
+	&.button-error {
+		background: $colour-error;
+		color: $colour-error-dark;
+
+		&:hover {
+			background: $colour-error-highlight;
+		}
+	}
+
+	&.button-warning {
+		background: $colour-warning;
+		color: $colour-text-inversed;
+
+		&:hover {
+			background: $colour-warning-shade;
+		}
+	}
+
+	&.button-inverse {
+		transition: background $transition 0.3s, border $transition 0.3s, color $transition 0.3s;
+
+		&.button-primary {
+			background: transparent;
+			color: $colour-primary;
+			border: 2px solid $colour-primary;
+
+			&.button-submitting,
+			&:hover {
+				background: transparent;
+				color: $colour-primary-shade;
+				border: 2px solid $colour-primary-shade;
+			}
+		}
+
+		&.button-secondary {
+			background: transparent;
+			color: $colour-secondary;
+			border: 2px solid $colour-secondary;
+
+			&.button-submitting,
+			&:hover {
+				background: transparent;
+				color: $colour-secondary-shade;
+				border: 2px solid $colour-secondary-shade;
+			}
+		}
+
+		&.button-info {
+			background: $colour-base;
+			color: $colour-info;
+			//border: 2px solid transparentize($colour-info, 0.75);
+
+			&.button-submitting,
+			&:hover {
+				background: lighten($colour-info, 50%);
+				//border: 2px solid $colour-info;
+			}
+		}
+
+		&.button-warning {
+			background: $colour-base;
+			//border: 2px solid transparentize($colour-warning, 0.9);
+			color: $colour-warning;
+			border-radius: $bbr * 2;
+
+			&.button-submitting,
+			&:hover {
+				//border: 2px solid $colour-warning;
+				background: lighten($colour-warning, 38%);
+			}
+		}
+
+		&.button-error {
+			background: $colour-base;
+			//border: 2px solid transparentize($colour-error, 0.9);
+			color: $colour-error;
+
+			&.button-submitting,
+			&:hover {
+				//border: 2px solid $colour-error;
+				background: lighten($colour-error, 47.5%);
+			}
+		}
+	}
+
+	&.button-transparent {
+		transition: background ease-in 0.2s, color ease-in 0.2s;
+
+		&.button-primary {
+			background: transparentize($colour-primary, 0.8);
+			color: darken($colour-primary, 15%);
+
+			&.button-submitting,
+			&:hover {
+				color: $colour-primary-shade;
+				background: transparentize($colour-primary, 0.7);
+			}
+		}
+
+		&.button-secondary {
+			background: transparentize($colour-secondary, 0.8);
+			color: darken($colour-secondary, 15%);
+
+			&.button-submitting,
+			&:hover {
+				color: $colour-secondary-shade;
+				background: transparentize($colour-secondary, 0.8);
+			}
+		}
+
+		&.button-info {
+			background: transparentize($colour-info, 0.8);
+			color: $colour-info;
+
+			&.button-submitting,
+			&:hover {
+				color: $colour-info-shade;
+				background: transparentize($colour-info, 0.7);
+			}
+		}
+
+		&.button-success {
+			background: transparentize($colour-success, 0.3);
+			color: $colour-text-inversed;
+
+			&.button-submitting,
+			&:hover {
+				color: $colour-text-inversed;
+				background: transparentize($colour-success-shade, 0.2);
+			}
+		}
+
+		&.button-warning {
+			background: transparentize($colour-warning, 0.4);
+			color: $colour-text-inversed;
+
+			&.button-submitting,
+			&:hover {
+				background: transparentize($colour-warning-shade, 0.2);
+			}
+		}
+
+		&.button-error {
+			background: transparentize($colour-error, 0.4);
+			color: $colour-text-inversed;
+
+			&.button-submitting,
+			&:hover {
+				color: $colour-text-inversed;
+				background: transparentize($colour-error-shade, 0.2);
+			}
+		}
+	}
+
+	&.button-submitting {
+		cursor: not-allowed;
+
+		&:not(.button-inverse):not(.button-transparent) {
+			&.button-primary {
+				background: $colour-primary-shade;
+			}
+
+			&.button-secondary {
+				background: $colour-secondary-shade;
+			}
+
+			&.button-info {
+				background: $colour-info-shade;
+			}
+
+			&.button-warning {
+				background: $colour-warning-shade;
+			}
+
+			&.button-error {
+				background: $colour-error-shade;
+			}
+
+			&.button-success {
+				background: $colour-success-shade;
+			}
+		}
+
+		&.button-transparent {
+			&.button-primary {
+				.button-submitting-icon svg * {
+					fill: $colour-primary;
+				}
+			}
+
+			&.button-secondary {
+				.button-submitting-icon svg * {
+					fill: $colour-secondary;
+				}
+			}
+
+			&.button-info {
+				.button-submitting-icon svg * {
+					fill: $colour-info;
+				}
+			}
+
+			&.button-warning,
+			&.button-error,
+			&.button-success {
+				.button-submitting-icon svg * {
+					fill: $colour-text-inversed;
+				}
+			}
+		}
+
+		&.button-inverse {
+			&.button-primary {
+				.button-submitting-icon svg * {
+					fill: $colour-primary;
+				}
+			}
+
+			&.button-secondary {
+				.button-submitting-icon svg * {
+					fill: $colour-secondary;
+				}
+			}
+
+			&.button-info {
+				.button-submitting-icon svg * {
+					fill: $colour-info;
+				}
+			}
+
+			&.button-warning {
+				.button-submitting-icon svg * {
+					fill: $colour-warning;
+				}
+			}
+
+			&.button-error {
+				.button-submitting-icon svg * {
+					fill: $colour-error;
+				}
+			}
+
+			&.button-success {
+				.button-submitting-icon svg * {
+					fill: $colour-success;
+				}
+			}
+		}
+
+		.button-submitting-icon {
+			line-height: 0;
+			text-align: center;
+			padding: 0 $qsu;
+
+			//@include md {
+			//    left: calc(#{$bsu * 1.7} - 35px);
+			//}
+
+			svg {
+				transform-origin: 50%;
+				width: 20px;
+				height: 20px;
+				line-height: 0;
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	&.button-disabled {
+		color: $colour-text-disabled;
+		cursor: not-allowed;
+
+		&,
+		&:hover {
+			background: $colour-base-disabled;
+		}
+
+		&:focus {
+			box-shadow: none !important;
+		}
+	}
+
+	// reset button to just show icon only
+	&.button-icon-only {
+		padding: 0;
+		border-radius: 0;
+		height: auto;
+
+		&.button-icon-badge {
+			padding: $qsu;
+			background: $colour-base;
+			border-radius: 50%;
+			width: 3rem;
+			height: 3rem;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+			&:hover {
+				background: $colour-base-shade;
+			}
+
+			svg {
+				font-size: $font-size-base * 1;
+			}
+		}
+
+		&,
+		&:hover {
+			background: none;
+		}
+
+		svg {
+			font-size: $font-size-base * 1.5;
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+		&.button-primary {
+			svg {
+				color: $colour-primary;
+			}
+
+			&:hover svg {
+				color: $colour-primary-shade;
+			}
+		}
+
+		&.button-secondary {
+			svg {
+				color: $colour-secondary;
+			}
+
+			&:hover svg {
+				color: $colour-secondary-shade;
+			}
+		}
+
+		&.button-info {
+			svg {
+				color: $colour-info;
+			}
+
+			&:hover svg {
+				color: $colour-info-shade;
+			}
+		}
+
+		&.button-warning {
+			svg {
+				color: $colour-warning;
+			}
+
+			&:hover svg {
+				color: $colour-warning-shade;
+			}
+		}
+
+		&.button-error {
+			svg {
+				color: $colour-error;
+			}
+
+			&:hover svg {
+				color: $colour-error-shade;
+			}
+		}
+
+		&.button-success {
+			svg {
+				color: $colour-success;
+			}
+
+			&:hover svg {
+				color: $colour-success-shade;
+			}
+		}
+
+		&.button-disabled {
+			svg,
+			&:hover svg {
+				color: $colour-text-disabled;
+				cursor: not-allowed;
+			}
+		}
+	}
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

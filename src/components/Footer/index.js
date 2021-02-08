@@ -4,11 +4,18 @@ import '@styles/styles.scss';
 import styles from './styles.module.scss';
 import Container from '@components/Container';
 import { Link } from 'gatsby';
+import SubscribeCTA from '@components/SubscribeCTA';
 
 const Footer = () => {
     return (
         <footer className={styles.footerWrapper}>
             <Container>
+                <div className={styles.ctaContainer}>
+                    <h3>
+                        Subscribe to our mailing list to be the first to know about Gundies 2022
+                    </h3>
+                    <SubscribeCTA />
+                </div>
                 <div className={styles.footerContainer}>
                     <div>
                         <p>About</p>

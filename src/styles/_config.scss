@@ -1,70 +1,69 @@
-$colour-primary: #FF8900;
-$colour-primary-shade: #342d61;
-$colour-primary-highlight: #bab0d7;
-$colour-primary-saturated: #a076ff;
+$colour-primary: #ff8900;
+$colour-primary-shade: darken($colour-primary, 10%);
+$colour-primary-highlight: lighten($colour-primary, 10%);
+$colour-primary-saturated: saturate($colour-primary, 10%);
 $colour-primary-faded: #eee9f4;
-
-$colour-background-main: #1C1C1C;
-$colour-background-secondary: #2b2b2b;
+$colour-primary-disabled: #9f5806;
 
 $colour-secondary: #171717;
 $colour-secondary-shade: darken($colour-secondary, 5%);
 $colour-secondary-highlight: lighten($colour-secondary, 10%);
 
-$colour-plan-essential: #7fd373;
-$colour-plan-professional: #ce4eb8;
-$colour-plan-commercial: #287ee5;
+$colour-background-main: #1C1C1C;
+$colour-background-secondary: #2b2b2b;
 
 $colour-black: #252525;
 $colour-white: #ffffff;
-$colour-white-gray: #f5f5f5;
+$colour-white-gray: #fcfcfc;
 $colour-lighter-gray: #e8e8e8;
 $colour-light-gray: #c7c7c7;
 $colour-gray: #9b9b9b;
 $colour-dark-gray: #797979;
 
-$background-body: lighten($colour-white-gray, 1%);
+$background-body: #1c1c1c;
 
-$colour-base: $colour-white;
-$colour-base-shade: $colour-white-gray;
-$colour-base-depth: $colour-lighter-gray;
-$colour-base-dark: $colour-light-gray;
-$colour-base-disabled: darken($colour-lighter-gray, 5%);
+$colour-base: #2b2b2b;
+$colour-base-shade: darken($colour-base, 2.5%);
+$colour-base-depth: darken($colour-base, 5%);
+$colour-base-dark: darken($colour-base, 10%);
+$colour-base-disabled: lighten($colour-base, 5%);
 
-$colour-text: $colour-black;
-$colour-text-shade: $colour-dark-gray;
-$colour-text-depth: $colour-gray;
+$colour-border-base: #ff8900;
+$colour-button-main: #1c1c1c;
+$colour-background-black: #1f1f1f;
+$colour-button-hover: #ff9d2b;
+$colour-button-background: #3e3c3c;
+$colour-shade-background: #2b2b2b;
+
+$colour-text: $colour-white;
+$colour-text-shade: $colour-white-gray;
+$colour-text-depth: $colour-lighter-gray;
 $colour-text-faded: $colour-light-gray;
-$colour-text-inversed: $colour-white;
-$colour-text-inversed-shade: $colour-white-gray;
-$colour-text-inversed-depth: $colour-lighter-gray;
-$colour-text-inversed-faded: $colour-light-gray;
-$colour-text-inversed-disabled: $colour-gray;
 $colour-text-disabled: $colour-gray;
+$colour-text-inversed: $colour-black;
+$colour-text-inversed-shade: $colour-dark-gray;
+$colour-text-inversed-depth: $colour-gray;
+$colour-text-inversed-faded: $colour-light-gray;
+$colour-text-inversed-disabled: $colour-dark-gray;
 
-$colour-info: #21a0cc;
+$colour-info: #287ee5;
 $colour-info-shade: darken($colour-info, 2.5%);
 
 $colour-warning: #f0933a;
 $colour-warning-shade: darken($colour-warning, 7%);
-$colour-warning-dark: darken($colour-warning, 40%);
 
 $colour-success: #7fd373;
 $colour-success-highlight: lighten(saturate($colour-success, 10%), 5%);
 $colour-success-shade: darken($colour-success, 2.5%);
-$colour-success-dark: darken($colour-success, 40%);
+$colour-success-dark: #193711;
 
 $colour-error: #d46b5f;
 $colour-error-highlight: lighten(saturate($colour-error, 10%), 5%);
 $colour-error-shade: darken($colour-error, 5%);
 $colour-error-dark: #451212;
 
-$focus-box-shadow: 0 0 0 0px transparentize($colour-primary, 0.5),
-0 0 0 2px transparentize($colour-primary, 0.6), 0 0 0 4px transparentize($colour-primary, 0.85);
-
-$font-size-base: 1rem;
-$font-family-heading: 'Russo One', 'Arial', sans-serif;
-$font-family-body: 'univia-pro', 'Arial', sans-serif;
+$focus-box-shadow: 0 0 0 0px rgba(61, 94, 103, 0.5), 0 0 0 2px rgba(61, 94, 103, 0.4),
+0 0 0 4px rgba(61, 94, 103, 0.247);
 
 $bbr: 3px;
 
@@ -76,20 +75,30 @@ $tsu: ($bsu / 4) * 3;
 
 $column-spacing: 30px;
 
-$logo-height: 80px;
+$logo-height: 43px;
+$logo-width: 83px;
 
 $transition: cubic-bezier(0.4, 0, 0.2, 1);
 $transition-accelerate: cubic-bezier(0.4, 0, 1, 1);
 $transition-decelerate: cubic-bezier(0, 0, 0.2, 1);
 
+$column-gutter: 30px;
+
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$breakpoint-xl: 1210px;
 $breakpoint-xxl: 1440px;
 
-$container-width: 100%;
+$container-width: $breakpoint-xl - $column-gutter;
 
 $shadow-bottom: 0 1px 3px rgba(0, 0, 0, 0.2);
 $shadow-middle: 0 3px 6px rgba(0, 0, 0, 0.2);
 $shadow-top: 0 3px 8px rgba(0, 0, 0, 0.5);
+
+$font-weight-heading: 400;
+$font-weight-body: 400;
+
+$font-size-base: 1rem;
+$font-family-heading: 'Russo One', sans-serif;
+$font-family-body: 'univia-pro', sans-serif;
