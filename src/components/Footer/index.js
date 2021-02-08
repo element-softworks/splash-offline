@@ -28,7 +28,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p>The Gundies</p>
+                        <p>The Gundies Awards 2021</p>
                         <div className={styles.socialMedia}>
                             <a
                                 href="https://www.instagram.com/gundieawards/"
@@ -68,8 +68,8 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={styles.copyrights}>
-                            <a href="https://forgerelations.com/" rel="noopener noreferrer">
-                                forgerelations.com
+                            <a href="https://thegundies.com/" rel="noopener noreferrer">
+                                thegundies.com
                             </a>
                             <a
                                 href="mailto:team@thegundies.com?subject=Gundies%20Enquiry"
