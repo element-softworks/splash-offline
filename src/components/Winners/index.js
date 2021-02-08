@@ -15,6 +15,7 @@ const Winners = () => {
                             winner {
                                 category: winner_category
                                 name: winner_name
+                                link: winner_link
                                 avatar: winner_avatar {
                                     childImageSharp {
                                         fluid(maxWidth: 600) {
@@ -36,12 +37,14 @@ const Winners = () => {
                 <h3>The Gundies 2021 Winners</h3>
                 <div className={styles.winnersContainer}>
                     {data?.winner?.map(winner => (
-                        <WinnerCard
-                            key={winner?.category}
-                            category={winner?.category}
-                            name={winner?.name}
-                            avatar={winner?.avatar}
-                        />
+                        <a href={winner?.link} rel="noopener noreferrer">
+                            <WinnerCard
+                                key={winner?.category}
+                                category={winner?.category}
+                                name={winner?.name}
+                                avatar={winner?.avatar}
+                            />
+                        </a>
                     ))}
                 </div>
             </Container>
