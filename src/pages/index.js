@@ -17,7 +17,7 @@ const Home = () => {
             <SEO />
             <Hero />
             <Winners />
-            <Container>
+            <div className={styles.livestreamWrapper}>
                 <div className={styles.livestreamContainer}>
                     <h3>Watch Last Year's Award Ceremony</h3>
                     <Button
@@ -25,13 +25,21 @@ const Home = () => {
                         link="https://www.youtube.com/watch?v=2_XL1LD9frc&feature=youtu.be"
                     />
                 </div>
-                <div className={styles.ctaContainer}>
-                    <h3>
-                        Subscribe to our mailing list to be the first to know about Gundies 2022
-                    </h3>
-                    <SubscribeCTA />
+                <div className={styles.livestreamVideo}>
+                    <iframe
+                        width="560"
+                        height="349"
+                        src="https://www.youtube.com/embed/2_XL1LD9frc?autoplay=1"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
                 </div>
-            </Container>
+            </div>
+            <div className={styles.ctaContainer}>
+                <h3>Subscribe to our mailing list to be the first to know about Gundies 2022</h3>
+                <SubscribeCTA />
+            </div>
         </Layout>
     );
 };
