@@ -40,6 +40,7 @@ const Footer = () => {
                             <a
                                 href="https://www.instagram.com/gundieawards/"
                                 rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <FontAwesomeIcon
                                     className={styles.fontAwesomeIcon}
@@ -49,6 +50,7 @@ const Footer = () => {
                             <a
                                 href="https://www.facebook.com/GundieAwards/"
                                 rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <FontAwesomeIcon
                                     className={styles.fontAwesomeIcon}
@@ -67,6 +69,7 @@ const Footer = () => {
                             <a
                                 href="https://www.youtube.com/channel/UCRUDRZDw1gQHTzPucW13SyA"
                                 rel="noopener noreferrer"
+                                target="_blank"
                             >
                                 <FontAwesomeIcon
                                     className={styles.fontAwesomeIcon}
@@ -75,7 +78,11 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={styles.copyrights}>
-                            <a href="https://thegundies.com/" rel="noopener noreferrer">
+                            <a
+                                href="https://thegundies.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
                                 thegundies.com
                             </a>
                             <a

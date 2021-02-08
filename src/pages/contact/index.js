@@ -16,7 +16,7 @@ const Contact = () => {
                             href="mailto:main@thegundies.com?subject=Gundies%20Enquiry"
                             className="text-secondary mt-2"
                         >
-                            main@forgerelations.com
+                            main@thegundies.com
                         </a>
                     </p>
                 </div>

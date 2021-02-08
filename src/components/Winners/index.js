@@ -37,7 +37,7 @@ const Winners = () => {
                 <h3>The Gundies 2021 Winners</h3>
                 <div className={styles.winnersContainer}>
                     {data?.winner?.map(winner => (
-                        <a href={winner?.link} rel="noopener noreferrer">
+                        <a href={winner?.link} rel="noopener noreferrer" target="_blank">
                             <WinnerCard
                                 key={winner?.category}
                                 category={winner?.category}
