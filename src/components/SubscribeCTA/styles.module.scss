@@ -6,12 +6,18 @@
 .subscribe-cta-form {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
     .input-box {
         display: flex;
         flex-direction: column;
         width: calc(100% - (130px + 1.875rem));
+        >div {
+            margin-top: $hsu;
+            p {
+                color: $colour-white;
+            }
+        }
         label {
             color: $colour-white;
             text-align: left;
@@ -36,6 +42,7 @@
     button {
         margin-left: $bsu;
         width: 130px;
+        margin-top: 28px;
     }
 }
 
@@ -50,6 +57,7 @@
         button {
             width: 100%;
             margin-left: 0;
+            margin-top: 0;
         }
     }
 }
