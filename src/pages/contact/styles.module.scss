@@ -1,9 +1,11 @@
 @import '@module';
 
 .contact-container {
+    margin-top: $dsu * 3;
     background: $colour-background-secondary;
     max-width: 72rem;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
