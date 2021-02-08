@@ -2,6 +2,7 @@
 
 .header-wrapper {
     width: 100vw;
+    z-index: 5;
 }
 
 .header-container {
@@ -28,15 +29,14 @@
 
     .countdown-container {
         display: flex;
-         > p {
+        > p {
             color: #a53327;
             font-style: italic;
             margin: 0;
             margin-left: $qsu;
-             &:first-child {
-                 margin-left: $bsu;
-             }
+            &:first-child {
+                margin-left: $bsu;
+            }
         }
     }
 }
-
