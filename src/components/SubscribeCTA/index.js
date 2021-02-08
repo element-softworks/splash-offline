@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import styles from './styles.module.scss';
 import Button from '@components/Button';
 import { useSnackbar } from '@components/Snackbar';
+import Alert from '@components/Alert';
 
 const SubscribeCTA = () => {
     // const [openSnackbar] = useSnackbar();
