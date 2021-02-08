@@ -60,13 +60,13 @@ const Hero = () => {
                                 For any enquires please contact team@thegundies.com
                             </p>
                         </div>
-                        <div className={styles.headingBottom}>
-                            <p>
-                                Subscribe to our mailing list to be the first to know about the
-                                Gundies 2022.
-                            </p>
-                            <SubscribeCTA />
-                        </div>
+                        {/*<div className={styles.headingBottom}>*/}
+                        {/*    <p>*/}
+                        {/*        Subscribe to our mailing list to be the first to know about the*/}
+                        {/*        Gundies 2022.*/}
+                        {/*    </p>*/}
+                        {/*    <SubscribeCTA />*/}
+                        {/*</div>*/}
                     </div>
                 </Container>
             </div>
