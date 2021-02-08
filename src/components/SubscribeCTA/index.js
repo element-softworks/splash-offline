@@ -56,7 +56,7 @@ const SubscribeCTAForm = ({
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values?.email}
-                    placeholder="Yor email..."
+                    placeholder="Your email..."
                 />
                 {showAlert && (
                     <Alert

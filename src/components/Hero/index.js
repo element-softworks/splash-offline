@@ -61,15 +61,8 @@ const Hero = () => {
                             <p>
                                 Thank you for your great a 2021. See you all for the 2022 Gundies.
                             </p>
-                            <p className={styles.textLight}>
-                                For any enquires please contact team@thegundies.com
-                            </p>
                         </div>
                         <div className={styles.headingBottom}>
-                            <p>
-                                Subscribe to our mailing list to be the first to know about the
-                                Gundies 2022.
-                            </p>
                             <SubscribeCTA />
                             {!ended && (
                                 <div className={styles.countdownContainer}>
