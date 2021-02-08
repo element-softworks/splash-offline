@@ -1,0 +1,7 @@
+---
+text : "<h2>The personal information we collect</h2><p>When registering or using the Services, you may be asked to provide, or you may upload, certain personally identifiable information about yourself (that is, information that can directly identify you or show where you might be contacted), that is “Personal Information”.</p>
+<p>For example, you can enter and participate in surveys, vote in polls, subscribe to a service or participate in a chat room, or forum. The types of Personal Information that may be collected via your engagement in the Services may include: name, address, date of birth, gender, e-mail address, telephone number, and credit card information.</p>
+<p>Forge Relations collects this Personal Information so Forge Relations can better understand your interests and modify the Services to suit you better. In any event, you may decline to submit Personal Information to any of the Services, in which case Forge Relations may not be able to provide the Services to you.</p>
+<p>Your continued use of the Services shall be deemed as an acceptance of the Terms, as updated. We recommend that you check this page anytime you use the Services.</p><h2>How we use your personal information</h2><p>Forge Relations will use the Personal Information you provide online for mainly the purpose(s) you have submitted. Examples of us using your Personal Information include sending you an e-mail notification about upcoming events. In addition, we may send you an e-mail asking you to participate in a survey.</p>"
+
+---

@@ -17,10 +17,10 @@ const Footer = () => {
                                 <Link to="/contact">Contact</Link>
                             </li>
                             <li>
-                                <Link to="/faq">FAQ</Link>
+                                <Link to="/faqs">FAQ</Link>
                             </li>
                             <li>
-                                <Link to="/terms-conditions">Terms & Conditions</Link>
+                                <Link to="/terms-and-conditions">Terms & Conditions</Link>
                             </li>
                             <li>
                                 <Link to="/privacy-policy">Privacy Policy</Link>
@@ -28,10 +28,10 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p>Forge Relations</p>
+                        <p>The Gundies</p>
                         <div className={styles.socialMedia}>
                             <a
-                                href="https://www.instagram.com/forgerelations/"
+                                href="https://www.instagram.com/gundieawards/"
                                 rel="noopener noreferrer"
                             >
                                 <FontAwesomeIcon
@@ -40,7 +40,7 @@ const Footer = () => {
                                 />
                             </a>
                             <a
-                                href="https://www.facebook.com/ForgeRelations/"
+                                href="https://www.facebook.com/GundieAwards/"
                                 rel="noopener noreferrer"
                             >
                                 <FontAwesomeIcon
@@ -48,16 +48,19 @@ const Footer = () => {
                                     icon={['fab', 'facebook']}
                                 />
                             </a>
+                            {/*<a*/}
+                            {/*    href="https://www.linkedin.com/company/forge-relations"*/}
+                            {/*    rel="noopener noreferrer"*/}
+                            {/*>*/}
+                            {/*    <FontAwesomeIcon*/}
+                            {/*        className={styles.fontAwesomeIcon}*/}
+                            {/*        icon={['fab', 'linkedin']}*/}
+                            {/*    />*/}
+                            {/*</a>*/}
                             <a
-                                href="https://www.linkedin.com/company/forge-relations"
+                                href="https://www.youtube.com/channel/UCRUDRZDw1gQHTzPucW13SyA"
                                 rel="noopener noreferrer"
                             >
-                                <FontAwesomeIcon
-                                    className={styles.fontAwesomeIcon}
-                                    icon={['fab', 'linkedin']}
-                                />
-                            </a>
-                            <a href="/" rel="noopener noreferrer">
                                 <FontAwesomeIcon
                                     className={styles.fontAwesomeIcon}
                                     icon={['fab', 'youtube']}
@@ -69,13 +72,13 @@ const Footer = () => {
                                 forgerelations.com
                             </a>
                             <a
-                                href="mailto:main@forgerelations.com?subject=Gundies%20Enquiry"
+                                href="mailto:team@thegundies.com?subject=Gundies%20Enquiry"
                                 className="text-secondary no-underline block mt-2"
                                 rel="noopener noreferrer"
                             >
-                                main@forgerelations.com
+                                team@thegundies.com
                             </a>
-                            <p>Copyright - 2021 Forge Relations</p>
+                            <p>Copyright - 2021 Forge Relations LLC</p>
                         </div>
                     </div>
                 </div>

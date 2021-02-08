@@ -1,0 +1,21 @@
+@import "@module";
+.privacy-main {
+  width: 100%;
+  padding: 3rem 2rem;
+  background: $colour-background-secondary;
+  height: 100%;
+  h2 {
+    margin-top: 4rem;
+    font-family: $font-family-body;
+    margin-bottom: $hsu;
+    font-weight: 600;
+  }
+  p {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    margin-bottom: $qsu / 2;
+    max-width: 1060px;
+  }
+  font-family: $font-family-body;
+}

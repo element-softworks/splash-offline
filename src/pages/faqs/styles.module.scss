@@ -1,0 +1,22 @@
+@import '@module';
+
+.faq-container {
+    background: $colour-background-secondary;
+
+    p {
+        font-weight: 300;
+    }
+    h2 {
+        margin-top: $dsu * 1.5;
+    }
+    h3 {
+        margin-top: $bsu;
+    }
+
+    .faq-body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

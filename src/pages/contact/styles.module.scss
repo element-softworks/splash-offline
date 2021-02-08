@@ -1,0 +1,11 @@
+@import '@module';
+
+.contact-container {
+    background: $colour-background-secondary;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
