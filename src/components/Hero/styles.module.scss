@@ -13,7 +13,7 @@
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: $dsu * 2;
+    padding-top: $dsu * 3;
 }
 
 .hero-heading {
@@ -24,10 +24,10 @@
     text-align: center;
     padding-bottom: $dsu;
     background-position: bottom;
-    padding-top: $dsu;
     svg {
         width: 220px;
         fill: $colour-white;
+        margin-bottom: $bsu;
     }
 
     hr {
@@ -84,6 +84,9 @@
 }
 
 @include xs {
+    .hero-container {
+        padding-top: $dsu;
+    }
     .hero-heading {
         svg {
             width: 150px;

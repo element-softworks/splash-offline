@@ -1,26 +1,29 @@
-@import "@module";
+@import '@module';
 .terms-main {
-  width: 100%;
-  margin-top: $dsu * 3;
-  padding: 3rem 2rem;
-  background: $colour-background-secondary;
-  height: 100%;
-  h2 {
-    margin-top: 4rem;
+    width: 100%;
+    margin-top: $dsu * 3;
+    padding: 3rem 2rem;
+    background: $colour-background-secondary;
+    height: 100%;
+    h2 {
+        margin-top: 4rem;
+        font-family: $font-family-body;
+        margin-bottom: $hsu;
+        font-weight: 600;
+    }
+    h3 {
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        margin-bottom: $qsu / 2;
+        max-width: 1060px;
+    }
     font-family: $font-family-body;
-    margin-bottom: $hsu;
-    font-weight: 600;
-  }
-  h3 {
-    padding: 0;
-    margin: 0;
-  }
-  p {
-    font-weight: 300;
-    padding: 0;
-    margin: 0;
-    margin-bottom: $qsu / 2;
-    max-width: 1060px;
-  }
-  font-family: $font-family-body;
+    @include xs {
+        margin-top: $dsu;
+    }
 }

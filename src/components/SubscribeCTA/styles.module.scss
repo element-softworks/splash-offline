@@ -32,8 +32,8 @@
             color: $colour-white;
             outline: none;
             margin-top: 0.2rem;
-            padding: $hsu $bsu;
-            padding-bottom: $hsu * 1.2;
+            padding: $hsu;
+            padding-bottom: $hsu * 1.1;
             &::placeholder {
                 color: $colour-light-gray;
             }

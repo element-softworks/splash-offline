@@ -9,8 +9,8 @@
     margin-top: 4rem;
     font-family: $font-family-body;
     margin-bottom: $hsu;
-    font-weight: 600;
   }
+
   p {
     font-weight: 300;
     padding: 0;
@@ -19,4 +19,7 @@
     max-width: 1060px;
   }
   font-family: $font-family-body;
+  @include xs {
+    margin-top: $dsu;
+  }
 }
